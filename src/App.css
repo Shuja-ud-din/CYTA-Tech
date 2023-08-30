@@ -521,6 +521,7 @@ span.arow-t {
 
 li.active span.arow-t {
   display: inline-block;
+  margin-right: 10px;
 }
 
 .client-heading h2 {
@@ -792,6 +793,7 @@ section.lets-work {
 footer#footer {
   background-color: #181C36;
   padding-top: 70px;
+  overflow: hidden;
 }
 
 

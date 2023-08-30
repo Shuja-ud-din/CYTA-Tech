@@ -1,7 +1,8 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import HomeExp from './components/Home/HomeExp';
+import HomeExp from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <HomeExp />
+        <Footer />
       </BrowserRouter>
     </>
   );

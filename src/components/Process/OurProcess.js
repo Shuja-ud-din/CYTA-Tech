@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { DataContext } from '../../../context/AppData'
 import ProcessTab from './ProcessTab';
+import { DataContext } from '../../context/AppData';
 
 const OurProcess = () => {
 
