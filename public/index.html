@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="./Logo.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +28,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>CYTA Technologies</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +44,166 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.mob-hamburger button').click(function () {
+        $(this).toggleClass('active');
+        $('.header-angle').toggleClass('active');
+        $('.header-pages ul').toggleClass('active');
+      });
+    });
+  </script>
+
+
+  <script>
+    $('.slide-fst').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 1500,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3.5
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $('.slide-sec').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 1500,
+      rtl: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3.5
+        }
+      }
+    })
+  </script>
+
+  <!-- <script>
+        $('.tab').on('click', function (evt) {
+            evt.preventDefault();
+            $(this).toggleClass('active');
+            var sel = this.getAttribute('data-toggle-target');
+            $('.tab-content').removeClass('active').filter(sel).addClass('active');
+        });
+    </script> -->
+
+  <script>
+    $(document).ready(function () {
+
+      $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+      })
+
+    })
+  </script>
+
+  <script>
+    $(function () {
+      $('.tabs-nav a').click(function () {
+
+        // Check for active
+        $('.tabs-nav li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        // Display active tab
+        let currentTab = $(this).attr('href');
+        $('.tabs-content div').hide();
+        $(currentTab).show();
+
+        return false;
+      });
+    });
+  </script>
+
+  <!-- client -->
+  <script>
+    $('.client').owlCarousel({
+      loop: false,
+      margin: 20,
+      nav: true,
+      singleItem: true,
+      navText: ["<img src='images/arrow-c1.png'>", "<img src='images/arrow-c2.png'>"],
+      dots: false,
+      autoplayTimeout: 4000,
+      smartSpeed: 1500,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $('.stories-h').owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 1500,
+      singleItem: true,
+      navText: ["<img src='images/arrow-c1.png'>", "<img src='images/arrow-c2.png'>"],
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+</body>
+
 </html>
