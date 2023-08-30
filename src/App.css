@@ -417,7 +417,7 @@ ul.tabs li.current {
 
 
 .home-main-1 {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   background: linear-gradient(180deg, #F5FFE3 79.81%, rgba(255, 255, 255, 0) 100%);
 }
 

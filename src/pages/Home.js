@@ -9,7 +9,7 @@ import OurProjects from '../components/Projects/OurProjects'
 import SuccessStories from '../components/Stories/SuccessStories'
 import WorkTogether from '../components/WorkTogether'
 
-const HomeExp = () => {
+const Home = () => {
     return (
         <>
             <div className="home-main-1">
@@ -27,4 +27,4 @@ const HomeExp = () => {
     )
 }
 
-export default HomeExp
+export default Home

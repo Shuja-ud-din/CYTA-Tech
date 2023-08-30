@@ -1,15 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { DataContext } from '../../context/AppData'
 import ServiceTab from './ServiceTab';
 import tabArrow from '../../assets/images/tab-arrow.png'
+import { NavLink } from 'react-router-dom';
 
 const OurServices = () => {
 
     const { serviceTabsData } = useContext(DataContext);
 
-    const renderedTabs = serviceTabsData.map((tabObj, index) => {
-        return <ServiceTab key={index} obj={tabObj} sr={index + 1} />
-    })
+    const [activeTab, setActiveTab] = useState(0)
+
+    // const renderedTabs = serviceTabsData.map((tabObj, index) => {
+    //     return <ServiceTab key={index} obj={tabObj} sr={index + 1} />
+    // })
 
     const serviceLinks = [
         'UI/UX design websites',
@@ -21,9 +24,13 @@ const OurServices = () => {
         'Web application development'
     ]
 
+    const switchTab = (index) => {
+        setActiveTab(index)
+    }
+
     const renderServices = serviceLinks.map((label, index) => {
         let activeClass = '';
-        if (index === 0) {
+        if (index === activeTab) {
             activeClass = 'active'
         }
         else {
@@ -31,13 +38,13 @@ const OurServices = () => {
         }
 
         return (
-            <li key={index} className={activeClass}>
-                <a href={`#tab${index + 1}`}>
+            <li key={index} className={activeClass} onClick={() => switchTab(index)}>
+                <NavLink>
                     <span className="arow-t">
                         <img src={tabArrow} alt="lazy" />
                     </span>
                     {label}
-                </a>
+                </NavLink>
             </li>
         )
     })
@@ -60,7 +67,7 @@ const OurServices = () => {
                         <div className="services-content">
                             <section className="tabs-content">
 
-                                {renderedTabs}
+                                <ServiceTab obj={serviceTabsData[activeTab]} />
 
                             </section>
                         </div>

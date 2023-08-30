@@ -1,28 +1,9 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../../context/AppData'
+import React from 'react'
 import arrowC2 from '../../assets/images/arrow-c2.png'
 import btnArrow from '../../assets/images/btn-arrow.png'
+import Projects from './Projects'
 
-const OurProjects = ({ n }) => {
-
-    const { projectsData } = useContext(DataContext);
-
-    const renderedProjects = projectsData.map((project, index) => {
-        if (index >= n) {
-            return null
-        }
-        return (
-            <div key={index} className="recent-project-sub">
-                <div className="recent-project-image">
-                    <img src={project.image} alt="lazy" />
-                </div>
-                <div className="recent-project-content">
-                    <span className="s-name">E-commerce websites</span>
-                    <h3>E-commerce redesign for <span className="p-name">“{project.for}”</span></h3>
-                </div>
-            </div>
-        )
-    })
+const OurProjects = () => {
 
     return (
         <>
@@ -31,9 +12,7 @@ const OurProjects = ({ n }) => {
                     <h2>RECENT PROJECTS</h2>
                 </div>
                 <div className="container">
-                    <div className="recent-project-flex">
-                        {renderedProjects}
-                    </div>
+                    <Projects n={4} />
                     <div className="tab-btn rec banner-btn">
                         <a href="/">
                             SEE Projects

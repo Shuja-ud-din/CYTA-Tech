@@ -10,7 +10,7 @@ const HomeTopBox = () => {
     return (
         <>
             <section className="home-banner">
-                <div className="container">
+                <div className="container" style={{ paddingTop: '60px' }}>
                     <div className="banner-main">
                         <div className="banner-content">
                             <h2>Expert Technology Services for <span className="g-clr">Modern Businesses</span></h2>

@@ -1,5 +1,6 @@
 import React from 'react'
 import fLogo from '../assets/images/f-Logo.png'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -25,9 +26,9 @@ const Footer = () => {
                         </div>
                         <div className="pages-1">
                             <ul>
-                                <li><a href="/">Work</a></li>
-                                <li><a href="/">SERVices</a></li>
-                                <li><a href="/">About</a></li>
+                                <li><NavLink to="/Work">Work</NavLink></li>
+                                <li><NavLink to="/">SERVices</NavLink></li>
+                                <li><NavLink to="/">About</NavLink></li>
                             </ul>
                         </div>
                         <div className="pages-2">

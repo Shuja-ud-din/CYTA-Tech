@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import ProcessTab from './ProcessTab';
 import { DataContext } from '../../context/AppData';
 
@@ -6,9 +6,34 @@ const OurProcess = () => {
 
     const { workTabsData } = useContext(DataContext);
 
+    const workLinks = [
+        'Project Reasearch',
+        'Design',
+        'Development',
+        'Testing'
+    ]
+
+    const [activeTab, setActiveTab] = useState(0);
+
+    const switchTab = (index) => {
+        setActiveTab(index)
+    }
+
+    const renderedLinks = workLinks.map((label, index) => {
+        let linkClass = "tab-link";
+        if (activeTab === index) {
+            linkClass = 'tab-link current'
+        }
+        else {
+            linkClass = 'tab-link'
+        }
+
+        return <li key={index} className={linkClass} onClick={() => switchTab(index)}>{label}</li>
+    })
+
     const renderedTabs = workTabsData.map((tabObj, index) => {
         let activeClass = ''
-        if (index === 0) {
+        if (index === activeTab) {
             activeClass = 'current'
         }
         else {
@@ -30,10 +55,7 @@ const OurProcess = () => {
                     <div className="work-tabs-main">
                         {/* tabs */}
                         <ul className="tabs">
-                            <li className="tab-link current" data-tab="tab-1">Project Reasearch</li>
-                            <li className="tab-link" data-tab="tab-2">Design</li>
-                            <li className="tab-link" data-tab="tab-3">Development</li>
-                            <li className="tab-link" data-tab="tab-4">Testing</li>
+                            {renderedLinks}
                         </ul>
 
                         {renderedTabs}
