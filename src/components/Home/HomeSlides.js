@@ -70,7 +70,7 @@ const HomeSlides = () => {
 
 
                 <div className="slides-main">
-                    <ReactOwlCarousel className='owl-theme' nav={false} dots={false} rtlClass='owl-ltr' autoplay={1} autoplayHoverPause={true} autoplayTimeout={4000} smartSpeed={1500} loop margin={10} responsive={{
+                    <ReactOwlCarousel className='owl-theme' nav={false} dots={false} autoplay={1} autoplayHoverPause={true} autoplayTimeout={4000} smartSpeed={1500} loop margin={10} responsive={{
                         0: {
                             items: 1
                         },
