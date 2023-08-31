@@ -16,7 +16,7 @@ const Header = () => {
                                 <li><NavLink to='/'>Home</NavLink></li>
                                 <li><NavLink to='/Work'>Work</NavLink></li>
                                 <li><NavLink to='/Services'>Services</NavLink></li>
-                                <li><NavLink>About</NavLink></li>
+                                <li><NavLink to='/About'>About</NavLink></li>
                                 <li><NavLink>CONTACT</NavLink></li>
                             </ul>
                             <div className="mob-hamburger"><button type="submit"
