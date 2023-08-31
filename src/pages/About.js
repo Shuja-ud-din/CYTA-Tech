@@ -137,7 +137,7 @@ const About = () => {
                     <div className="a-work-image" style={{ backgroundImage: `url(${buisness})` }}>
                         <div className="work-work">
                             <h2>Let's <span>Work Together</span> to <br /> Achieve Your <span>Business Goals.</span></h2>
-                            <a href="#">Contact us</a>
+                            <a href="/">Contact us</a>
                         </div>
                     </div>
                 </div>
