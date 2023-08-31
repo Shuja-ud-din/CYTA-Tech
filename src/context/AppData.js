@@ -6,6 +6,13 @@ import imgTab4 from '../assets/images/work-(3).jpg'
 import projectImg1 from '../assets/images/r-project1.png'
 import serviceImage1 from '../assets/images/image3.png'
 import clientImg1 from '../assets/images/stories1.png'
+import service1 from '../assets/images/woman-working.png'
+import service2 from '../assets/images/woman-taking.png'
+import service3 from '../assets/images/parcel-paper.png'
+import service4 from '../assets/images/content-management.png'
+import service5 from '../assets/images/business-blogging.png'
+import service6 from '../assets/images/mobile-app.png'
+import service7 from '../assets/images/ux-ui-design.png'
 
 const DataContext = createContext();
 
@@ -122,9 +129,99 @@ const AppData = ({ children }) => {
         }
     ]
 
+    const servicesData = [
+        {
+            title: 'UI/UX Design Websites',
+            image: service1,
+            type: 'UI/UX',
+            description: "We believe in building long-term relationships with our clients and helping them achieve their business goals. If you are ready to take the next step and start working with us, fill out the contact form below and we'll get in touch with you shortly.",
+            subTypes: [
+                'Complte Website Redesign',
+                'Website Design From Scratch',
+                'Payment & Security Integration',
+                'Indicating Design Inconsistencies In Current Website',
+                'Fixing Functional Issues'
+            ]
+        },
+        {
+            title: 'Custom Website Development',
+            image: service2,
+            type: '',
+            description: "At CYTA Technologies, we understand that each business has unique needs and requirements when it comes to their online presence. That's why we offer custom website development services to help businesses create a website that is tailored to their specific needs.",
+            subTypes: [
+                'Portfolio Websites',
+                'Corporate Websites',
+                'Non-Profit Websites',
+                'Educational Websites'
+            ]
+        },
+        {
+            title: 'E-commerce Websites',
+            image: service3,
+            type: 'E-COMMERCE',
+            description: 'At CYTA Technologies, we specialize in creating e-commerce websites that are tailored to your business needs. Our team of experts has extensive experience in developing custom e-commerce solutions that help businesses drive sales and increase revenue.',
+            subTypes: [
+                'Shopify Store',
+                'Single Product Store',
+                'Multi-Product Store',
+                'Marketplace',
+                'Dropshipping Store'
+            ]
+        },
+        {
+            title: 'CMS Websites',
+            image: service4,
+            type: 'CMS',
+            description: "At CYTA Technologies, we offer CMS website development services that make it easy for businesses to manage their website content. Our team of experts has experience in developing custom CMS websites that allow businesses to update their website content easily and quickly.",
+            subTypes: [
+                'Wordpress Websites',
+                'Blogging Platforms',
+                'Community Portals',
+                'News and Media Websites'
+            ]
+        },
+        {
+            title: 'Blogging Websites',
+            image: service5,
+            type: 'Blogging',
+            description: 'At CYTA Technologies, we specialize in developing blogging websites that help businesses establish an online presence and engage with their audience. Our team of experts has experience in creating custom blogging solutions that allow businesses to publish and share content easily and effectively.',
+            subTypes: [
+                'Personal Blogging Website',
+                'Niche Blogging Websites',
+                'Microblogs',
+                'Review Blogs'
+            ]
+        },
+        {
+            title: 'Mobile App Websites',
+            image: service6,
+            type: '',
+            description: 'At CYTA Technologies, we offer mobile app development services that help businesses reach their customers on-the-go. Our team of experts has experience in developing custom mobile apps that are user-friendly and deliver a seamless experience for your customers.',
+            subTypes: [
+                'App Landing Page',
+                'App Review Website',
+                'App Blog',
+                'App Store Optimization (ASO) Websites'
+            ]
+        },
+        {
+            title: 'Web Application Development',
+            image: service7,
+            type: '',
+            description: 'At CYTA Technologies, we offer web application development services that help businesses streamline their operations and improve their efficiency. Our team of experts has experience in developing custom web applications that are tailored to your business needs and requirements.',
+            subTypes: [
+                'E-commerce Applications',
+                'Social Media Applications',
+                'Customer Relationship Management (CRM) Systems',
+                'Human Resources (HR) Management Systems',
+                'Learning Management Systems (LMS)'
+            ]
+        }
+    ]
+
     return (
         <>
-            <DataContext.Provider value={{ workTabsData, serviceTabsData, projectsData, storyData }}>
+            <DataContext.Provider value={{ workTabsData, serviceTabsData, projectsData, storyData, servicesData }}>
                 {children}
             </DataContext.Provider>
         </>
