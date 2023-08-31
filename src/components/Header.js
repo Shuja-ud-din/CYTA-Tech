@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom'
 import logo from '../assets/images/Logo.png'
 
 const Header = () => {
+
+    const hideNav = () => {
+        document.getElementById('burger').click();
+    }
+
     return (
         <>
             <header id="header">
@@ -13,13 +18,13 @@ const Header = () => {
                         </div>
                         <div className="header-pages">
                             <ul>
-                                <li><NavLink to='/'>Home</NavLink></li>
-                                <li><NavLink to='/Work'>Work</NavLink></li>
-                                <li><NavLink to='/Services'>Services</NavLink></li>
-                                <li><NavLink to='/About'>About</NavLink></li>
-                                <li><NavLink to='/Contact'>CONTACT</NavLink></li>
+                                <li onClick={hideNav}><NavLink to='/'>Home</NavLink></li>
+                                <li onClick={hideNav}><NavLink to='/Work'>Work</NavLink></li>
+                                <li onClick={hideNav}><NavLink to='/Services'>Services</NavLink></li>
+                                <li onClick={hideNav}><NavLink to='/About'>About</NavLink></li>
+                                <li onClick={hideNav}><NavLink to='/Contact'>CONTACT</NavLink></li>
                             </ul>
-                            <div className="mob-hamburger"><button type="submit"
+                            <div className="mob-hamburger"><button id='burger' type="submit"
                                 className="hamburger-btn"><span></span><span></span><span></span></button>
                             </div>
                         </div>
