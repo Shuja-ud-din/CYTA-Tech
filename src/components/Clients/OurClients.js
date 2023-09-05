@@ -27,9 +27,6 @@ const OurClients = () => {
         )
     })
 
-    const righArrow = <img src={arrowC1} alt="lazy" />
-    const leftArrow = <img src={arrowC2} alt="lazy" />
-
     return (
         <>
             <section className="our-clients">

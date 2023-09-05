@@ -11,7 +11,6 @@ const HomeTopBox = () => {
 
     useEffect(() => {
         const swiftUpElements = document.querySelectorAll('.swift-up-text');
-        console.log(swiftUpElements);
         swiftUpElements.forEach(elem => {
 
             const words = elem.textContent.split(' ');
