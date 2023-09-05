@@ -2,6 +2,7 @@ import React from 'react'
 import arrowC2 from '../assets/images/arrow-c2.png'
 import btnArrow from '../assets/images/btn-arrow.png'
 import wk from '../assets/images/wk.png'
+import wkE2 from '../assets/images/wk-e2.png'
 
 const WorkTogether = () => {
     return (
@@ -22,7 +23,10 @@ const WorkTogether = () => {
                             </div>
                         </div>
                         <div className="work-image">
-                            <img src={wk} alt="lazy" />
+                            <img className='box' src={wk} alt="lazy" />
+                            <div className="w-image2">
+                                <img src={wkE2} alt="lazy" />
+                            </div>
                         </div>
                     </div>
                 </div>

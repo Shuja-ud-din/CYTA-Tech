@@ -1,12 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/images/Logo.png'
 
 const Header = () => {
 
+    const [renderer, setrenderer] = useState(0)
+
+    const linksArray = [
+        {
+            lable: 'Home',
+            path: '/',
+        },
+        {
+            lable: 'Work',
+            path: '/Work',
+        },
+        {
+            lable: 'Services',
+            path: '/Services',
+        },
+        {
+            lable: 'About',
+            path: '/About',
+        },
+        {
+            lable: 'Contact',
+            path: '/Contact',
+        }
+    ]
+
+    let activeClass = ''
+
     const hideNav = () => {
         document.getElementById('burger').click();
+        setrenderer(renderer + 1)
     }
+    const renderedLinks = linksArray.map((link, index) => {
+        let labelText = link.lable;
+
+        if (window.location.pathname === link.path) {
+            activeClass = 'active';
+            labelText = labelText.replace(labelText, `{ ${labelText} }`)
+        }
+        else {
+            activeClass = ''
+        }
+
+        return <li key={index} className={activeClass} onClick={hideNav}><NavLink to={link.path}>{labelText}</NavLink></li>
+    })
 
     return (
         <>
@@ -18,11 +59,7 @@ const Header = () => {
                         </div>
                         <div className="header-pages">
                             <ul>
-                                <li onClick={hideNav}><NavLink to='/'>Home</NavLink></li>
-                                <li onClick={hideNav}><NavLink to='/Work'>Work</NavLink></li>
-                                <li onClick={hideNav}><NavLink to='/Services'>Services</NavLink></li>
-                                <li onClick={hideNav}><NavLink to='/About'>About</NavLink></li>
-                                <li onClick={hideNav}><NavLink to='/Contact'>CONTACT</NavLink></li>
+                                {renderedLinks}
                             </ul>
                             <div className="mob-hamburger"><button id='burger' type="submit"
                                 className="hamburger-btn"><span></span><span></span><span></span></button>
