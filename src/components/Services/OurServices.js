@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { DataContext } from '../../context/AppData'
 import ServiceTab from './ServiceTab';
-import tabArrow from '../../assets/images/tab-arrow.png'
+import tabArrow from '../../assets/images/tab-arrow.svg'
 import { NavLink } from 'react-router-dom';
 
 const OurServices = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import btnArrow from '../../assets/images/btn-arrow.png'
-import arrowC2 from '../../assets/images/arrow-c2.png'
+import btnArrow from '../../assets/images/btn-arrow.svg'
+import arrowC2 from '../../assets/images/arrow-c2.svg'
 import { NavLink } from 'react-router-dom'
 
 const ProcessTab = ({ data, sr, activeClass }) => {
