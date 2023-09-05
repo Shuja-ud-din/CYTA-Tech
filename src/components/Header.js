@@ -38,7 +38,7 @@ const Header = () => {
     const renderedLinks = linksArray.map((link, index) => {
         let labelText = link.lable;
 
-        if (window.location.pathname === link.path) {
+        if (window.location.pathname === link.path && index !== linksArray.length - 1) {
             activeClass = 'active';
             labelText = labelText.replace(labelText, `{ ${labelText} }`)
         }
