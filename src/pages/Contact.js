@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cLinks1 from '../assets/images/c-links(1).png'
 import cLinks2 from '../assets/images/c-links(2).png'
 import cLinks3 from '../assets/images/c-links(3).png'
+import axios from 'axios'
 
 const Contact = () => {
+
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phoneNo, setPhoneNo] = useState("");
+    const [company, setCompany] = useState("");
+    const [service, setService] = useState("0");
+    const [projectDetails, setProjectDetails] = useState("");
+    const [budget, setBudget] = useState("");
+    const [deadline, setDeadline] = useState("");
+    const [comment, setComment] = useState("");
+
+
+    const sendMessage = () => {
+        axios.post("http://localhost:4001/mailInfo", {
+            firstName,
+            lastName,
+            email,
+            phoneNo,
+            company,
+            service,
+            projectDetails,
+            budget,
+            deadline,
+            comment
+        })
+    }
+
     return (
         <>
             <div className="home-main-1">
@@ -26,51 +55,51 @@ const Contact = () => {
                         <div className="field-flex">
                             <div className="field1">
                                 <label htmlFor="">First Name *</label>
-                                <input type="text" placeholder="Your first name" />
+                                <input type="text" placeholder="Your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Last Name *</label>
-                                <input type="text" placeholder="Your last name" />
+                                <input type="text" placeholder="Your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Email *</label>
-                                <input type="email" placeholder="Your business email" />
+                                <input type="email" placeholder="Your business email" value={email} onChange={(e) => setEmail(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Phone Number *</label>
-                                <input type="number" placeholder="Your phone number" />
+                                <input type="number" placeholder="Your phone number" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Company Name *</label>
-                                <input type="text" placeholder="Company Name *" />
+                                <input type="text" placeholder="Company Name *" value={company} onChange={(e) => setCompany(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Service Required *</label>
-                                <select id="cars" name="cars">
-                                    <option value="volvo">Select Service</option>
-                                    <option value="saab">Select Service2</option>
-                                    <option value="mercedes">Select Service3</option>
-                                    <option value="audi">Select Service4</option>
+                                <select name="service" value={service} onChange={(e) => setService(e.target.value)} >
+                                    <option value="0">Select Service</option>
+                                    <option value="service 1">Select Service2</option>
+                                    <option value="service 2">Select Service3</option>
+                                    <option value="service 3">Select Service4</option>
                                 </select>
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Project Details *</label>
-                                <input type="text" placeholder="Your project brief" />
+                                <input type="text" placeholder="Your project brief" value={projectDetails} onChange={(e) => setProjectDetails(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Budget *</label>
-                                <input type="text" placeholder="Your estimated budget" />
+                                <input type="text" placeholder="Your estimated budget" value={budget} onChange={(e) => setBudget(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Timeline *</label>
-                                <input type="text" placeholder="Your expected deadline" />
+                                <input type="text" placeholder="Your expected deadline" value={deadline} onChange={(e) => setDeadline(e.target.value)} />
                             </div>
                             <div className="field1">
                                 <label htmlFor="">Additional Comments</label>
-                                <textarea name="msg" id="" cols="30" rows="10"></textarea>
+                                <textarea name="msg" id="" cols="30" rows="10" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
                             </div>
                             <div className="submit-btn">
-                                <input type="submit" value="Send message" />
+                                <input type="submit" value="Send message" onClick={sendMessage} />
                             </div>
                         </div>
 
