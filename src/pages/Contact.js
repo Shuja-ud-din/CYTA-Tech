@@ -18,8 +18,8 @@ const Contact = () => {
     const [comment, setComment] = useState("");
 
 
-    const sendMessage = () => {
-        axios.post("http://localhost:4001/mailInfo", {
+    const sendMessage = async () => {
+        const response = await axios.post("http://localhost:8002/send-mail", {
             firstName,
             lastName,
             email,
@@ -31,6 +31,7 @@ const Contact = () => {
             deadline,
             comment
         })
+        console.log(response.data);
     }
 
     return (
