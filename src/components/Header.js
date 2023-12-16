@@ -62,7 +62,7 @@ const Header = () => {
                 <div className="container">
                     <div className="header-main">
                         <div className="header-logo">
-                            <NavLink><img src={logo} alt="logo" /></NavLink>
+                            <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
                         </div>
                         <div className="header-pages">
                             <ul>
