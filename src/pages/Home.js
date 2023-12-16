@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HomeTopBox from '../components/Home/HomeTopBox'
 import HomeSlides from '../components/Home/HomeSlides'
 import HomeInfo from '../components/Home/HomeInfo'
@@ -10,6 +10,14 @@ import SuccessStories from '../components/Stories/SuccessStories'
 import WorkTogether from '../components/WorkTogether'
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
+
     return (
         <>
             <div className="home-main-1">
@@ -20,7 +28,7 @@ const Home = () => {
             <OurProcess />
             <OurServices />
             <OurClients />
-            <OurProjects n={4} />
+            <OurProjects />
             <SuccessStories />
             <WorkTogether />
         </>

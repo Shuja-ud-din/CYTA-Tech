@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import videoBG from '../assets/images/realistic-business.png'
 import playIcon from '../assets/images/video-icon.png'
 import mission1 from '../assets/images/mission(1).png'
@@ -7,8 +7,15 @@ import arrow from '../assets/images/arrow.png'
 import womanTaking from '../assets/images/woman-taking.png'
 import OurClients from '../components/Clients/OurClients'
 import buisness from '../assets/images/realistic-business9.png'
+import { NavLink } from 'react-router-dom'
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
     return (
         <>
             <div className="home-main-1">
@@ -137,7 +144,7 @@ const About = () => {
                     <div className="a-work-image" style={{ backgroundImage: `url(${buisness})` }}>
                         <div className="work-work">
                             <h2>Let's <span>Work Together</span> to <br /> Achieve Your <span>Business Goals.</span></h2>
-                            <a href="/">Contact us</a>
+                            <NavLink to="/Contact">Contact us</NavLink>
                         </div>
                     </div>
                 </div>

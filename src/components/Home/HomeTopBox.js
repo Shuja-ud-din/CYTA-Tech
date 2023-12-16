@@ -44,7 +44,7 @@ const HomeTopBox = () => {
                                 thrive, leveraging the latest technologies and delivering exceptional results.</p>
                         </div>
                         <div className="banner-btn">
-                            <NavLink>
+                            <NavLink to="/Work">
                                 See Our Work
                                 <img className="hov1" src={btnArrow} alt="lazy" />
                                 <img className="hov2" src={arrowC2} alt="lazy" />

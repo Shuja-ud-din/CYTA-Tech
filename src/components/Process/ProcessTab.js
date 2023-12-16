@@ -13,8 +13,10 @@ const ProcessTab = ({ data, sr, activeClass }) => {
                     <p>{data.para}</p>
 
                     <div className="banner-btn p3">
-                        <NavLink>about CYTA <img className="hov1" src={btnArrow} alt="lazy" /> <img
-                            className="hov2" src={arrowC2} alt="lazy" /> </NavLink>
+                        <NavLink to="/About">
+                            about CYTA <img className="hov1" src={btnArrow} alt="lazy" /> <img
+                                className="hov2" src={arrowC2} alt="lazy" />
+                        </NavLink>
                     </div>
                 </div>
                 <div className="tab-image-sub">

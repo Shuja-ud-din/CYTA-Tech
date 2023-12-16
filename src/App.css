@@ -142,6 +142,7 @@ header#header {
   display: flex;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
 }
 
 .banner-btn a img {

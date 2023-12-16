@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import logo from '../assets/images/Logo.svg'
 
 const Header = () => {
+
+    const location = useLocation();
+    const [pathname, setPathName] = useState(location.pathname);
 
     const [renderer, setrenderer] = useState(0)
 
@@ -38,7 +41,7 @@ const Header = () => {
     const renderedLinks = linksArray.map((link, index) => {
         let labelText = link.lable;
 
-        if (window.location.pathname === link.path && index !== linksArray.length - 1) {
+        if (pathname === link.path && index !== linksArray.length - 1) {
             activeClass = 'active';
             labelText = labelText.replace(labelText, `{ ${labelText} }`)
         }
@@ -48,6 +51,10 @@ const Header = () => {
 
         return <li key={index} className={activeClass} onClick={hideNav}><NavLink to={link.path}>{labelText}</NavLink></li>
     })
+
+    useEffect(() => {
+        setPathName(location.pathname)
+    }, [location.pathname])
 
     return (
         <>

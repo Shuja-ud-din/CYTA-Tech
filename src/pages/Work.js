@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Projects from '../components/Projects/Projects'
 import subtractImage from '../assets/images/Subtract.png'
 import { NavLink } from 'react-router-dom'
+import { DataContext } from '../context/AppData'
 
 const Work = () => {
 
@@ -14,7 +15,7 @@ const Work = () => {
         'Blogging websites'
     ]
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const { activeIndex, setActiveIndex } = useContext(DataContext);
 
     const switchTab = (index) => {
         setActiveIndex(index)
@@ -32,6 +33,13 @@ const Work = () => {
 
         return <li key={index} className={activeClass} onClick={() => switchTab(index)}><NavLink>{label}</NavLink></li>
     })
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
 
     return (
         <>

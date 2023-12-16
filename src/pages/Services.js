@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { DataContext } from '../context/AppData'
 import ServiceCard from '../components/Services/ServiceCard';
 
@@ -7,8 +7,15 @@ const Services = () => {
     const { servicesData } = useContext(DataContext);
 
     const renderedServices = servicesData.map((service, index) => {
-        return <ServiceCard key={index} service={service} />
+        return <ServiceCard key={index} service={service} index={index} />
     })
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
 
     return (
         <>

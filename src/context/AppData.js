@@ -1,4 +1,4 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 import imgTab1 from '../assets/images/tab1.png'
 import imgTab2 from '../assets/images/work-(1).jpg'
 import imgTab3 from '../assets/images/work-(2).jpg'
@@ -17,6 +17,7 @@ import service7 from '../assets/images/ux-ui-design.png'
 const DataContext = createContext();
 
 const AppData = ({ children }) => {
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const workTabsData = [
         {
@@ -221,7 +222,7 @@ const AppData = ({ children }) => {
 
     return (
         <>
-            <DataContext.Provider value={{ workTabsData, serviceTabsData, projectsData, storyData, servicesData }}>
+            <DataContext.Provider value={{ workTabsData, serviceTabsData, projectsData, storyData, servicesData, activeIndex, setActiveIndex }}>
                 {children}
             </DataContext.Provider>
         </>

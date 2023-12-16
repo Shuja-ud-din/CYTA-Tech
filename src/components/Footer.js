@@ -8,7 +8,7 @@ const Footer = () => {
             <footer id="footer">
                 <div className="container">
                     <div className="footer-next">
-                        <h2>So What’s Next?</h2>
+                        <h2>So What's Next?</h2>
                         <p>CYTA Technologies is a leading provider of technology solutions for businesses. Our dynamic team
                             of experts is passionate about helping our clients succeed in the digital age.</p>
                         <a href="/">Book A Call</a>
@@ -27,13 +27,13 @@ const Footer = () => {
                         <div className="pages-1">
                             <ul>
                                 <li><NavLink to="/Work">Work</NavLink></li>
-                                <li><NavLink to="/">SERVices</NavLink></li>
-                                <li><NavLink to="/">About</NavLink></li>
+                                <li><NavLink to="/Services">SERVices</NavLink></li>
+                                <li><NavLink to="/About">About</NavLink></li>
                             </ul>
                         </div>
                         <div className="pages-2">
                             <ul>
-                                <li><a href="/">CONTACT</a></li>
+                                <li><NavLink to="/Contact">CONTACT</NavLink></li>
                                 <li><a href="/">Privacy policy</a></li>
                                 <li><a href="/">Terms & conditions</a></li>
 

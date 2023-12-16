@@ -1,10 +1,14 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 import arrow from '../../assets/images/arrow.png'
 import btnArrow from '../../assets/images/btn-arrow.png'
 import arrowC2 from '../../assets/images/arrow-c2.png'
+import { DataContext } from '../../context/AppData'
 
-const ServiceCard = ({ service }) => {
+const ServiceCard = ({ service, index }) => {
+
+    const navigate = useNavigate();
+    const { setActiveIndex } = useContext(DataContext)
 
     const renderedTypes = service.subTypes.map((type, index) => {
         return (
@@ -14,6 +18,14 @@ const ServiceCard = ({ service }) => {
             </p>
         )
     })
+
+    const showService = (event) => {
+        event.preventDefault();
+        index < 5 ?
+            setActiveIndex(index + 1) :
+            setActiveIndex(0);
+        navigate("/Work")
+    }
 
     return (
         <>
@@ -28,11 +40,11 @@ const ServiceCard = ({ service }) => {
                         {renderedTypes}
                     </div>
                     <div className="banner-btn p3">
-                        <NavLink>
+                        <a href='/Work' onClick={showService}>
                             See {service.type} projects
                             <img className="hov1" src={btnArrow} alt="lazy" />
                             <img className="hov2" src={arrowC2} alt="lazy" />
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import cLinks1 from '../assets/images/c-links(1).png'
 import cLinks2 from '../assets/images/c-links(2).png'
 import cLinks3 from '../assets/images/c-links(3).png'
-import axios from 'axios'
 
 const Contact = () => {
 
@@ -17,22 +16,29 @@ const Contact = () => {
     const [deadline, setDeadline] = useState("");
     const [comment, setComment] = useState("");
 
-
-    const sendMessage = async () => {
-        const response = await axios.post("http://localhost:8002/send-mail", {
-            firstName,
-            lastName,
-            email,
-            phoneNo,
-            company,
-            service,
-            projectDetails,
-            budget,
-            deadline,
-            comment
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         })
-        console.log(response.data);
-    }
+    }, [])
+
+
+    // const sendMessage = async () => {
+    //     const response = await axios.post("http://localhost:8002/send-mail", {
+    //         firstName,
+    //         lastName,
+    //         email,
+    //         phoneNo,
+    //         company,
+    //         service,
+    //         projectDetails,
+    //         budget,
+    //         deadline,
+    //         comment
+    //     })
+    //     console.log(response.data);
+    // }
 
     return (
         <>
@@ -100,7 +106,7 @@ const Contact = () => {
                                 <textarea name="msg" id="" cols="30" rows="10" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
                             </div>
                             <div className="submit-btn">
-                                <input type="submit" value="Send message" onClick={sendMessage} />
+                                <input type="submit" value="Send message" />
                             </div>
                         </div>
 
