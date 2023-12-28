@@ -15,15 +15,6 @@ const OurServices = () => {
     // })
 
 
-    const serviceLinks = [
-        'Shopify Theme Development',
-        'Search Engine Optimization (SEO)',
-        'WordPress Website Development',
-        'UX&UI Design and Consulting Services',
-        'Custom Website Development',
-        'Mobile App Development Services',
-    ]
-
     const switchTab = (index) => {
         setActiveTab(index)
     }

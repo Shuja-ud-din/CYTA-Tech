@@ -12,7 +12,6 @@ import service3 from '../assets/images/parcel-paper.png'
 import service4 from '../assets/images/content-management.png'
 import service5 from '../assets/images/business-blogging.png'
 import service6 from '../assets/images/mobile-app.png'
-import service7 from '../assets/images/ux-ui-design.png'
 
 const DataContext = createContext();
 

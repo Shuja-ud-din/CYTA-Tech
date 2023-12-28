@@ -8,11 +8,11 @@ const Work = () => {
 
     const linksArray = [
         'All',
-        'UI/UX design websites',
-        'Custom website development',
-        'E-commerce websites',
-        'CMS websites',
-        'Blogging websites'
+        'Search Engine Optimization',
+        'WordPress Website',
+        'UI/UX design',
+        'Custom website',
+        'Mobile Apps',
     ]
 
     const { activeIndex, setActiveIndex } = useContext(DataContext);

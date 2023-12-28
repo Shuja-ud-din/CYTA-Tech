@@ -12,6 +12,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <helmet>
+          <title>
+            CYTA Tech | Digital Marketing Agency Driving Revenue
+          </title>
+          <meta name="description" content={"CYTA Tech is a top Digital Marketing Agency in Australia. Strengthen brand identity, promote online presence & increase engagement and Conversions."} />
+        </helmet>
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
