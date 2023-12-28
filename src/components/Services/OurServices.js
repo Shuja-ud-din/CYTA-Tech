@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const OurServices = () => {
 
-    const { serviceTabsData } = useContext(DataContext);
+    const { servicesData } = useContext(DataContext);
 
     const [activeTab, setActiveTab] = useState(0)
 
@@ -14,21 +14,21 @@ const OurServices = () => {
     //     return <ServiceTab key={index} obj={tabObj} sr={index + 1} />
     // })
 
+
     const serviceLinks = [
-        'UI/UX design websites',
-        'Custom website development',
-        'E-commerce websites',
-        'CMS websites',
-        'Blogging websites',
-        'Mobile app websites',
-        'Web application development'
+        'Shopify Theme Development',
+        'Search Engine Optimization (SEO)',
+        'WordPress Website Development',
+        'UX&UI Design and Consulting Services',
+        'Custom Website Development',
+        'Mobile App Development Services',
     ]
 
     const switchTab = (index) => {
         setActiveTab(index)
     }
 
-    const renderServices = serviceLinks.map((label, index) => {
+    const renderServices = servicesData.map(({ title }, index) => {
         let activeClass = '';
         if (index === activeTab) {
             activeClass = 'active'
@@ -43,7 +43,7 @@ const OurServices = () => {
                     <span className="arow-t">
                         <img src={tabArrow} alt="lazy" />
                     </span>
-                    {label}
+                    {title}
                 </NavLink>
             </li>
         )
@@ -67,7 +67,7 @@ const OurServices = () => {
                         <div className="services-content">
                             <section className="tabs-content">
 
-                                <ServiceTab obj={serviceTabsData[activeTab]} />
+                                <ServiceTab obj={servicesData[activeTab]} />
 
                             </section>
                         </div>
