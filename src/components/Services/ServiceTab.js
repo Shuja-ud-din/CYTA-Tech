@@ -1,6 +1,7 @@
 import React from 'react'
 import arrowC2 from '../../assets/images/arrow-c2.svg'
 import btnArrow from '../../assets/images/btn-arrow.svg'
+import { NavLink } from 'react-router-dom'
 
 const ServiceTab = ({ obj }) => {
     return (
@@ -8,8 +9,8 @@ const ServiceTab = ({ obj }) => {
             <div>
                 <p>{obj.para}</p>
                 <div className="tab-btn banner-btn">
-                    <a href="/">Learn more <img className="hov1" src={btnArrow} alt="lazy" /> <img
-                        className="hov2" src={arrowC2} alt="lazy" /> </a>
+                    <NavLink to="/Services">Learn more <img className="hov1" src={btnArrow} alt="lazy" /> <img
+                        className="hov2" src={arrowC2} alt="lazy" /> </NavLink>
                 </div>
                 <img src={obj.image} alt="lazy" />
             </div>

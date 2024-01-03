@@ -21,7 +21,7 @@ const ServiceCard = ({ service, index }) => {
 
     const showService = (event) => {
         event.preventDefault();
-        index < 5 ?
+        index < 6 ?
             setActiveIndex(index + 1) :
             setActiveIndex(0);
         navigate("/Work")

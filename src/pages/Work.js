@@ -8,6 +8,7 @@ const Work = () => {
 
     const linksArray = [
         'All',
+        'Shopify',
         'Search Engine Optimization',
         'WordPress Website',
         'UI/UX design',

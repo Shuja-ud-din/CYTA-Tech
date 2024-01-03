@@ -23,19 +23,19 @@ const AppData = ({ children }) => {
 
     const workTabsData = [
         {
-            para: 'At CYTA Technologies, we begin each project with thorough research to ensure that we fully understand your business needs and goals. Our team conducts market research, competitor analysis, and user research to inform the project scope and strategy.',
+            para: "At CYTA Technology, we are not just marketers; we are partners in your digital success. We explore deep into understanding your target audience. Through comprehensive market research, we identify trends, assess competitors, and uncover opportunities. Our approach extends to robust keyword exploration, ensuring our digital strategy is informed by data and finely tuned to capture your audience's attention. By leveraging data-driven insights, we shape a strategy and lay the groundwork for a tailored and effective digital marketing campaign.",
             image: imgTab1
         },
         {
-            para: 'At CYTA Technologies, we begin each project with thorough research to ensure that we fully understand your business needs and goals. Our team conducts market research, competitor analysis, and user research to inform the project scope and strategy.',
+            para: "You can start a successful digital marketing strategy by aligning our efforts with your goals. Develop buyer personas and plan engaging campaigns. Our detailed strategies, including content calendars and channel-specific approaches, ensure a consistent brand presence across various digital touchpoints. Map customer journeys to enhance the user experience across all digital platforms. Continuously monitor user behavior to adapt and optimize campaigns in real time.",
             image: imgTab2
         },
         {
-            para: 'At CYTA Technologies, we begin each project with thorough research to ensure that we fully understand your business needs and goals. Our team conducts market research, competitor analysis, and user research to inform the project scope and strategy.',
+            para: "We bring our carefully designed strategies to life with practical implementation. Implement campaigns using accurate methodologies and a tailored tech stack. Produce engaging and relevant content for various digital channels. Implement continuous optimization strategies based on analytics and performance metrics. Collaborate closely with clients to ensure campaign goals are met.",
             image: imgTab3
         },
         {
-            para: 'At CYTA Technologies, we begin each project with thorough research to ensure that we fully understand your business needs and goals. Our team conducts market research, competitor analysis, and user research to inform the project scope and strategy.',
+            para: "Define clear testing objectives, employ A/B testing, and utilize analytics for data-driven optimization. Ongoing optimization is not just a goal but a commitment. We share detailed reports with clients, highlighting successes, insights, and areas for refinement. Our focus on continuous improvement ensures that your digital marketing efforts evolve to meet and exceed expectations in the ever-changing digital landscape.",
             image: imgTab4
         },
     ]
@@ -189,7 +189,7 @@ const AppData = ({ children }) => {
         {
             title: 'Custom Website Development',
             image: service5,
-            type: 'Blogging',
+            type: '',
             description: "Bring your digital aspirations to life with CYTA Technology's premier Custom Website Development Services, designed to construct high-performance websites. Our seasoned website developer possesses a robust background in custom website development and a commitment to excellence, ensuring we stay current with the latest technologies and trends. Bring your digital vision by constructing innovative and user-friendly websites, empowering you to transform more visitors into valuable customers. Whether crafting engaging corporate sites or intricate animations, create a digital experience that delivers solid results.",
             subTypes: [
                 'Custom UX & UI Design',
