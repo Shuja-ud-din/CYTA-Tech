@@ -11,7 +11,7 @@ const Footer = () => {
                         <h2>So What's Next?</h2>
                         <p>CYTA Technologies is a leading provider of technology solutions for businesses. Our dynamic team
                             of experts is passionate about helping our clients succeed in the digital age.</p>
-                        <a href="/">Book A Call</a>
+                        <NavLink to="/Contact">Book A Call</NavLink>
                     </div>
                     <div className="footer-main">
                         <div className="footer-logo">
