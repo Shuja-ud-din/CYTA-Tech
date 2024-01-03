@@ -483,7 +483,7 @@ header.tabs-nav a {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 37px;
   text-transform: capitalize;
   color: #181C36;
@@ -2588,18 +2588,6 @@ ul.tabs li.current {
 
 .services-content {
   width: 49%;
-}
-
-header.tabs-nav a {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
-  text-transform: capitalize;
-  color: #181C36;
-  display: block;
-  margin-bottom: 40px;
 }
 
 section.tabs-content p {

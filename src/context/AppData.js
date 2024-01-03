@@ -74,19 +74,19 @@ const AppData = ({ children }) => {
     const projectsData = [
         {
             image: projectImg1,
-            for: 'Myers Chang'
+            for: 'LOOTCRATE'
         },
         {
             image: projectImg2,
-            for: 'Myers Chang'
+            for: 'Death Wish'
         },
         {
             image: projectImg3,
-            for: 'Myers Chang'
+            for: 'FitTea'
         },
         {
             image: projectImg4,
-            for: 'Myers Chang'
+            for: 'NOTICE'
         }, {
             image: projectImg1,
             for: 'Myers Chang'
