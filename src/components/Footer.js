@@ -17,11 +17,10 @@ const Footer = () => {
                         <div className="footer-logo">
                             <a href="/"><img src={fLogo} alt="lazy" /></a>
                             <div className="f-links">
-                                <a href="/"><i className="fa-brands fa-twitter"></i></a>
-                                <a href="/"><i className="fa-brands fa-linkedin-in"></i></a>
-                                <a href="/"><i className="fa-brands fa-facebook-f"></i></a>
-                                <a href="/"><i className="fa-brands fa-instagram"></i></a>
-                                <a href="/"><i className="fa-brands fa-pinterest-p"></i></a>
+                                <a href="/" target='_blank'><i className="fa-brands fa-linkedin-in"></i></a>
+                                <a href="/" target='_blank'><i className="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/cytatech/" target='_blank'><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.pinterest.com.au/cytatech/" target='_blank'><i className="fa-brands fa-pinterest-p"></i></a>
                             </div>
                         </div>
                         <div className="pages-1">

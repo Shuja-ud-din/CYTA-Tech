@@ -123,7 +123,7 @@ const Contact = () => {
                                     </div>
                                     <div className="c-link-content">
                                         <h3>Visit us</h3>
-                                        <a href="/">77 45 Macquarie Street <br /> Parramatta NSW 2150 Australia</a>
+                                        <p>45 Macquarie Street <br /> Parramatta NSW 2150 Australia</p>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                                     </div>
                                     <div className="c-link-content">
                                         <h3>Call us</h3>
-                                        <a href="/">0482059481</a>
+                                        <p >0482059481</p>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                                     </div>
                                     <div className="c-link-content">
                                         <h3>Email us</h3>
-                                        <a href="/">Info@cytatech.com.au</a>
+                                        <p>Info@cytatech.com.au</p>
                                     </div>
                                 </div>
                             </div>

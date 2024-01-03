@@ -3,7 +3,10 @@ import imgTab1 from '../assets/images/tab1.png'
 import imgTab2 from '../assets/images/work-(1).jpg'
 import imgTab3 from '../assets/images/work-(2).jpg'
 import imgTab4 from '../assets/images/work-(3).jpg'
-import projectImg1 from '../assets/images/r-project1.png'
+import projectImg1 from '../assets/images/project1.png'
+import projectImg2 from '../assets/images/project2.png'
+import projectImg3 from '../assets/images/project3.png'
+import projectImg4 from '../assets/images/project4.png'
 import serviceImage1 from '../assets/images/image3.png'
 import clientImg1 from '../assets/images/stories1.png'
 import service1 from '../assets/images/woman-working.png'
@@ -74,15 +77,15 @@ const AppData = ({ children }) => {
             for: 'Myers Chang'
         },
         {
-            image: projectImg1,
+            image: projectImg2,
             for: 'Myers Chang'
         },
         {
-            image: projectImg1,
+            image: projectImg3,
             for: 'Myers Chang'
         },
         {
-            image: projectImg1,
+            image: projectImg4,
             for: 'Myers Chang'
         }, {
             image: projectImg1,

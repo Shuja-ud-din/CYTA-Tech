@@ -3821,7 +3821,7 @@ section.contact-form {
   margin-bottom: 16px;
 }
 
-.c-link-content a {
+.c-link-content p {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 450;
@@ -4077,6 +4077,10 @@ section.about-cyta {
 }
 
 .banner-content h1 span:nth-child(6) {
+  color: #95BF46 !important;
+}
+
+.banner-content h1 span:nth-child(8) {
   color: #95BF46 !important;
 }
 

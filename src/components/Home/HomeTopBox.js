@@ -37,7 +37,7 @@ const HomeTopBox = () => {
                     <div className="banner-main">
                         <div className="banner-content">
                             <div className="animate-text">
-                                <h1 className="swift-up-text">Expert Technology Services for <span className="g-clr">Marketing Agency </span></h1>
+                                <h1 className="swift-up-text">Expert Technology Services for <span className="g-clr">Digital Marketing Agency</span></h1>
                             </div>
                             <p>CYTA Tech is a top Digital Marketing Agency in Australia. Strengthen brand identity, promote online presence & increase engagement and Conversions.</p>
                         </div>
