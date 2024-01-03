@@ -108,7 +108,7 @@ header#header {
   display: block;
 }
 
-.banner-content h2 {
+.banner-content h1 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 560;
@@ -1033,7 +1033,7 @@ span.hov-x:hover::after {
 }
 
 
-.site-banner-content h2 {
+.site-banner-content h1 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -1961,11 +1961,11 @@ section.about-cyta {
   }
 }
 
-.banner-content h2 span:nth-child(5) {
+.banner-content h1 span:nth-child(5) {
   color: #95BF46 !important;
 }
 
-.banner-content h2 span:nth-child(6) {
+.banner-content h1 span:nth-child(6) {
   color: #95BF46 !important;
 }
 
@@ -2219,7 +2219,7 @@ header#header {
   display: block;
 }
 
-.banner-content h2 {
+.banner-content h1 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 560;
@@ -3144,7 +3144,7 @@ span.hov-x:hover::after {
 }
 
 
-.site-banner-content h2 {
+.site-banner-content h1 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -4072,11 +4072,11 @@ section.about-cyta {
   }
 }
 
-.banner-content h2 span:nth-child(5) {
+.banner-content h1 span:nth-child(5) {
   color: #95BF46 !important;
 }
 
-.banner-content h2 span:nth-child(6) {
+.banner-content h1 span:nth-child(6) {
   color: #95BF46 !important;
 }
 
@@ -4327,7 +4327,7 @@ section.blog-details {
     max-width: 80%;
   }
 
-  .banner-content h2 {
+  .banner-content h1 {
     font-size: 50px;
   }
 
@@ -4335,11 +4335,11 @@ section.blog-details {
     max-width: 90%;
   }
 
-  .site-banner-content h2 br {
+  .site-banner-content h1 br {
     display: none;
   }
 
-  .site-banner-content h2 {
+  .site-banner-content h1 {
     font-size: 30px;
   }
 
@@ -4359,7 +4359,7 @@ section.blog-details {
     display: none;
   }
 
-  .site-banner-content h2 {
+  .site-banner-content h1 {
     max-width: 40%;
   }
 
@@ -4516,7 +4516,7 @@ section.blog-details {
     margin: auto;
   }
 
-  .banner-content h2 {
+  .banner-content h1 {
     font-size: 40px;
   }
 
@@ -4672,7 +4672,7 @@ section.blog-details {
     margin: 60px 0px;
   }
 
-  .site-banner-content h2 br {
+  .site-banner-content h1 br {
     display: none;
   }
 
@@ -4680,7 +4680,7 @@ section.blog-details {
     display: block;
   }
 
-  .site-banner-content h2 {
+  .site-banner-content h1 {
     max-width: 100%;
     margin-bottom: 20px;
   }
@@ -4717,7 +4717,7 @@ section.blog-details {
     max-width: 100%;
   }
 
-  .banner-content h2 {
+  .banner-content h1 {
     font-size: 24px;
   }
 
@@ -4892,11 +4892,11 @@ section.blog-details {
     line-height: 150%;
   }
 
-  .site-banner-content h2 br {
+  .site-banner-content h1 br {
     display: none;
   }
 
-  .site-banner-content h2 {
+  .site-banner-content h1 {
     font-weight: 600;
     font-size: 24px;
   }
@@ -5031,7 +5031,7 @@ section.blog-details {
     margin-top: 20px;
   }
 
-  .site-banner-content h2 {
+  .site-banner-content h1 {
     max-width: 100%;
   }
 
@@ -5363,7 +5363,7 @@ section.blog-details {
       max-width: 80%;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
       font-size: 50px;
     }
 
@@ -5371,11 +5371,11 @@ section.blog-details {
       max-width: 90%;
     }
 
-    .site-banner-content h2 br {
+    .site-banner-content h1 br {
       display: none;
     }
 
-    .site-banner-content h2 {
+    .site-banner-content h1 {
       font-size: 30px;
     }
 
@@ -5395,7 +5395,7 @@ section.blog-details {
       display: none;
     }
 
-    .site-banner-content h2 {
+    .site-banner-content h1 {
       max-width: 40%;
     }
 
@@ -5539,7 +5539,7 @@ section.blog-details {
       margin: auto;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
       font-size: 40px;
     }
 
@@ -5695,7 +5695,7 @@ section.blog-details {
       margin: 60px 0px;
     }
 
-    .site-banner-content h2 br {
+    .site-banner-content h1 br {
       display: none;
     }
 
@@ -5703,7 +5703,7 @@ section.blog-details {
       display: block;
     }
 
-    .site-banner-content h2 {
+    .site-banner-content h1 {
       max-width: 100%;
       margin-bottom: 20px;
     }
@@ -5729,7 +5729,7 @@ section.blog-details {
       max-width: 100%;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
       font-size: 24px;
     }
 
@@ -5904,11 +5904,11 @@ section.blog-details {
       line-height: 150%;
     }
 
-    .site-banner-content h2 br {
+    .site-banner-content h1 br {
       display: none;
     }
 
-    .site-banner-content h2 {
+    .site-banner-content h1 {
       font-weight: 600;
       font-size: 24px;
     }
@@ -6043,7 +6043,7 @@ section.blog-details {
       margin-top: 20px;
     }
 
-    .site-banner-content h2 {
+    .site-banner-content h1 {
       max-width: 100%;
     }
 

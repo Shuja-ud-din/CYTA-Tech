@@ -23,7 +23,7 @@ const About = () => {
                     <div className="container">
                         <div className="site-banner-main">
                             <div className="site-banner-content">
-                                <h2>About <br /> <span className="g-clr"> CYTA Technologies </span></h2>
+                                <h1>About <br /> <span className="g-clr"> CYTA Technologies </span></h1>
                                 <p>At CYTA Technologies, we are a passionate and forward-thinking software agency dedicated
                                     to providing cutting-edge technology solutions to empower businesses in the digital age.
                                     With our team of skilled professionals, we strive to deliver innovative and user-centric

@@ -24,7 +24,7 @@ const Services = () => {
                     <div className="container">
                         <div className="site-banner-main">
                             <div className="site-banner-content">
-                                <h2>Innovative Offerings to <br /> Empower Your <span className="g-clr"> Success </span></h2>
+                                <h1>Innovative Offerings to <br /> Empower Your <span className="g-clr"> Success </span></h1>
                                 <p>At CYTA Technologies, we offer a comprehensive range of services designed to empower
                                     businesses and drive their success in the modern digital landscape. From innovative web
                                     design and development to cutting-edge mobile app solutions, our services are crafted to

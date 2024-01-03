@@ -184,7 +184,7 @@ const AppData = ({ children }) => {
             ]
         },
         {
-            title: 'Custom Website Developmen',
+            title: 'Custom Website Development',
             image: service5,
             type: 'Blogging',
             description: "Bring your digital aspirations to life with CYTA Technology's premier Custom Website Development Services, designed to construct high-performance websites. Our seasoned website developer possesses a robust background in custom website development and a commitment to excellence, ensuring we stay current with the latest technologies and trends. Bring your digital vision by constructing innovative and user-friendly websites, empowering you to transform more visitors into valuable customers. Whether crafting engaging corporate sites or intricate animations, create a digital experience that delivers solid results.",

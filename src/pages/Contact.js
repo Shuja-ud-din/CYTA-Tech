@@ -47,7 +47,7 @@ const Contact = () => {
                     <div className="container">
                         <div className="site-banner-main">
                             <div className="site-banner-content">
-                                <h2>Request a Quote From <br /> <span className="g-clr"> Technologies </span></h2>
+                                <h1>Request a Quote From <br /> <span className="g-clr"> Technologies </span></h1>
                                 <p>Ready to take your digital presence to the next level? Fill out the form below to request
                                     a personalized quote tailored to your unique needs. Our team of experts at CYTA
                                     Technologies is ready to discuss your project requirements, provide valuable insights,
@@ -123,7 +123,7 @@ const Contact = () => {
                                     </div>
                                     <div className="c-link-content">
                                         <h3>Visit us</h3>
-                                        <a href="/">77 E1 Main Boulevard Gulberg, <br /> Block E1 Block E 1 Gulberg III, <br /> Lahore, Punjab</a>
+                                        <a href="/">77 45 Macquarie Street <br /> Parramatta NSW 2150 Australia</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                                     </div>
                                     <div className="c-link-content">
                                         <h3>Call us</h3>
-                                        <a href="/">+92 300 6088036</a>
+                                        <a href="/">0482059481</a>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                                     </div>
                                     <div className="c-link-content">
                                         <h3>Email us</h3>
-                                        <a href="/">info@cytatechnologies.com</a>
+                                        <a href="/">Info@cytatech.com.au</a>
                                     </div>
                                 </div>
                             </div>

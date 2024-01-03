@@ -48,7 +48,7 @@ const Work = () => {
                     <div className="container">
                         <div className="site-banner-main">
                             <div className="site-banner-content">
-                                <h2>Elevating Businesses through <br /> <span className="g-clr"> Exceptional Projects </span></h2>
+                                <h1>Elevating Businesses through <br /> <span className="g-clr"> Exceptional Projects </span></h1>
                             </div>
                         </div>
                     </div>
