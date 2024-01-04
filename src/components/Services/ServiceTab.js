@@ -12,7 +12,7 @@ const ServiceTab = ({ obj }) => {
                     <NavLink to="/Services">Learn more <img className="hov1" src={btnArrow} alt="lazy" /> <img
                         className="hov2" src={arrowC2} alt="lazy" /> </NavLink>
                 </div>
-                <img src={obj.image} alt="lazy" />
+                <img className='serviceImg' src={obj.image} alt="lazy" />
             </div>
         </>
     )
