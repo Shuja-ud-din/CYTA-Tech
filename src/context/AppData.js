@@ -111,25 +111,31 @@ const AppData = ({ children }) => {
 
     const storyData = [
         {
-            content: "Working with CYTA Technologies has been a game-changer for our business. Their expertise in UI/UX design helped us create a website that not only looks great but also delivers a seamless user experience. We highly recommend CYTA Technologies for their professionalism, expertise, and dedication to their clients.",
+            content: "Choosing CYTA Technology Agency for Digital Marketing Services has proven our best strategic move. Their innovative approach and tailored strategies have elevated our online presence significantly. From comprehensive market research to impactful campaign execution, they deliver measurable results. The team's commitment, creativity, and attention to detail make them standout partners. With CYTA Tech, we've not just found a service provider; we've discovered a growth catalyst. Highly recommend it to anyone looking to achieve digital success!",
             clientImage: clientImg1,
             clientName: 'John Smith',
             company: 'CEO at Blue lounge'
         },
         {
-            content: "Working with CYTA Technologies has been a game-changer for our business. Their expertise in UI/UX design helped us create a website that not only looks great but also delivers a seamless user experience. We highly recommend CYTA Technologies for their professionalism, expertise, and dedication to their clients.",
+            content: "A True Helping Hand - The CYTA Technology team helps us to grow and is our go-to for seamless product launches. Their digital expertise drives success. As reliable growth partner, they monitor, analyze, and resolve challenges, guaranteeing continuous success. Grateful for their invaluable support in our journey. I am happy that I took their services. Incredible work team!",
             clientImage: clientImg1,
             clientName: 'John Smith',
             company: 'CEO at Blue lounge'
         },
         {
-            content: "Working with CYTA Technologies has been a game-changer for our business. Their expertise in UI/UX design helped us create a website that not only looks great but also delivers a seamless user experience. We highly recommend CYTA Technologies for their professionalism, expertise, and dedication to their clients.",
+            content: "CYTA Technology is not just a digital agency but also our indispensable and essential growth partner. Mastering the complexities of SEO seemed like an elusive goal once we joined forces with CYTA Technology. Unlike others, their promises translated into a transformative reality. In just a few months, we experienced a significant upswing in search rankings, driving increased traffic and delivering tangible, measurable results. These guys are too good, that gave our brand a big boost. Just wow!",
             clientImage: clientImg1,
             clientName: 'John Smith',
             company: 'CEO at Blue lounge'
         },
         {
-            content: "Working with CYTA Technologies has been a game-changer for our business. Their expertise in UI/UX design helped us create a website that not only looks great but also delivers a seamless user experience. We highly recommend CYTA Technologies for their professionalism, expertise, and dedication to their clients.",
+            content: "CYTA Technology is a one-stop tech destination. Engaging with CYTA Tech for our WordPress website development was a game-changer. They completed every project not just on time and within budget but surpassed our expectations. No question or challenge was too much,  they leaped in to help even when it wasn't strictly 'their problem.' Grateful for their unwavering support, I wholeheartedly recommend CYTA Technology. They aren't just developers; they are pivotal contributors to our ongoing success story in the world of WordPress website development.",
+            clientImage: clientImg1,
+            clientName: 'John Smith',
+            company: 'CEO at Blue lounge'
+        },
+        {
+            content: "Engaging with CYTA Tech for UX&UI Design and Consulting Services has been a game-changer for our digital journey. Their team's creativity and strategic consulting redefined our user experience. From captivating designs to seamless functionalities, they orchestrated a digital transformation that surpassed our expectations. The collaborative approach and attention to detail were exemplary. They don't just design interfaces but also craft experiences that resonate. A highly recommended partner for anyone seeking excellence in UX/UI design and consulting services.",
             clientImage: clientImg1,
             clientName: 'John Smith',
             company: 'CEO at Blue lounge'
