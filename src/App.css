@@ -2649,6 +2649,7 @@ li.active span.arow-t {
 .serviceImg {
   height: 450px;
   width: 80%;
+  border-radius: 10px;
 }
 
 .client .owl-nav {
