@@ -9,7 +9,7 @@ const ServiceTab = ({ obj }) => {
             <div>
                 <p>{obj.para}</p>
                 <div className="tab-btn banner-btn">
-                    <NavLink to="/Services">Learn more <img className="hov1" src={btnArrow} alt="lazy" /> <img
+                    <NavLink to={`/Services/${obj.service}`}>Learn more <img className="hov1" src={btnArrow} alt="lazy" /> <img
                         className="hov2" src={arrowC2} alt="lazy" /> </NavLink>
                 </div>
                 <img className='serviceImg' src={obj.image} alt="lazy" />

@@ -5,7 +5,7 @@ import logo from '../assets/images/Logo.svg'
 const Header = () => {
 
     const location = useLocation();
-    const [pathname, setPathName] = useState(location.pathname);
+    const [pathname, setPathName] = useState(location.pathname === ' ' ? "/" : location.pathname.split("/")[1]);
 
     const [renderer, setrenderer] = useState(0)
 
@@ -53,7 +53,7 @@ const Header = () => {
     })
 
     useEffect(() => {
-        setPathName(location.pathname)
+        setPathName(location.pathname === ' ' ? "/" : `/${location.pathname.split("/")[1]}`)
     }, [location.pathname])
 
     return (

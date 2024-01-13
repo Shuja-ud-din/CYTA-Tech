@@ -10,11 +10,6 @@ const OurServices = () => {
 
     const [activeTab, setActiveTab] = useState(0)
 
-    // const renderedTabs = serviceTabsData.map((tabObj, index) => {
-    //     return <ServiceTab key={index} obj={tabObj} sr={index + 1} />
-    // })
-
-
     const switchTab = (index) => {
         setActiveTab(index)
     }

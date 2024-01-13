@@ -7,8 +7,10 @@ import Work from './pages/Work';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ServiceDetails from './pages/ServiceDetails';
 
 function App() {
+
   return (
     <>
       <BrowserRouter>
@@ -25,6 +27,8 @@ function App() {
           <Route path='/Services' element={<Services />} />
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/Services/:service' element={<ServiceDetails />} />
+          <Route path='*' element={<h1>404 Not Found</h1>} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -147,6 +147,7 @@ const AppData = ({ children }) => {
             title: 'Search Engine Optimization (SEO)',
             image: service2,
             type: 'SEO',
+            service: "SEO",
             para: "Supercharge your online visibility with our Search Engine Optimization Services. Our advanced SEO strategies deliver measurable results, driving increased traffic, higher rankings, and a powerful digital presence. Experience the impact of effective SEO, where success is not just a goal but a guarantee.",
             description: "Boost your site’s search performance with CYTA Technology SEO marketing solutions. Our SEO agency will collaborate closely with you to grasp your requirements and formulate a personalized strategy to optimize your website, Get a free report now to enhance rankings on Google, Bing, Yahoo, and beyond! We use ethical and proven methods to optimize your website, including ",
             subTypes: [
@@ -164,6 +165,7 @@ const AppData = ({ children }) => {
             title: 'Shopify Theme Development',
             image: service1,
             type: 'Shopify',
+            service: "Shopify",
             para: "Revolutionize your online presence with our Shopify Theme Development Services. Elevate your brand with stunning designs, seamless customization, and top-notch performance. Join our digital agency and redefine your e-commerce journey today!",
             description: "Take your online business to the next level with CYTA Technologies Shopify Theme Development Services, which helps deliver the optimal shopping experience to customers. Our team of seasoned professionals brings vast experience and in-depth knowledge to the table, ensuring your store stands out in the digital landscape. Here's how we can elevate your e-commerce venture: ",
             subTypes: [
@@ -180,6 +182,7 @@ const AppData = ({ children }) => {
             title: 'WordPress Website Development',
             image: service3,
             type: 'WordPress',
+            service: "WordPress",
             para: "Transform your digital presence with our WordPress Website Development Services. From sleek designs to seamless functionality, we craft websites that captivate audiences and elevate user experiences. Empower your brand with our expertise, where innovation meets excellence in every WordPress site we build.",
             description: 'CYTA Technology enhances the functionality of content management systems through WordPress website development services. Our skilled website developers create a site that captures your brand, boosts conversion rates, maximizes revenue, and optimizes search engine rankings to attract more visitors. We are dedicated to crafting robust digital solutions with our custom WordPress development services to support all of your WordPress needs. Contact us for WordPress theme customization, website development, and other WordPress projects. Our strategy process for WordPress website development consists of the following steps:',
             subTypes: [
@@ -192,6 +195,7 @@ const AppData = ({ children }) => {
             title: 'UX&UI Design and Consulting Services',
             image: service4,
             type: 'UI / UX',
+            service: "UI/UX",
             para: "Elevate your digital experience with our UX&UI Design and Consulting Services. We go beyond aesthetics, crafting interfaces that captivate and functionalities that resonate. From user-centric design to strategic consulting, we redefine digital interactions for a seamless, engaging journey. Partner with us to unlock the full potential of your user experience.",
             description: "CYTA Technology takes your digital experience to the next level with our top-notch UX&UI Design and Consulting Services. Our skilled team specializes in creating visually stunning and user-friendly interfaces, ensuring seamless navigation and optimum engagement. Leading companies and startups collaborate with CYTA Tech to augment their design teams and formulate digital strategies to achieve business goals. Elevate your website's appeal and functionality with CYTA's UI & UX services, where innovation meets user satisfaction. We are dedicated to delivering highly engaging mobile and web applications, covering areas such as",
             subTypes: [
@@ -204,6 +208,7 @@ const AppData = ({ children }) => {
             title: 'Custom Website Development',
             image: service5,
             type: '',
+            service: "Website-Developement",
             para: "Unlock your digital vision with our Custom Website Development Services. Tailored to your unique needs, we craft websites that blend innovation and functionality seamlessly. Our custom solutions ensure your online presence stands out, from intricate designs to robust features. You can experience the power of bespoke web development where your vision meets our expertise.",
             description: "Bring your digital aspirations to life with CYTA Technology's premier Custom Website Development Services, designed to construct high-performance websites. Our seasoned website developer possesses a robust background in custom website development and a commitment to excellence, ensuring we stay current with the latest technologies and trends. Bring your digital vision by constructing innovative and user-friendly websites, empowering you to transform more visitors into valuable customers. Whether crafting engaging corporate sites or intricate animations, create a digital experience that delivers solid results.",
             subTypes: [
@@ -217,6 +222,7 @@ const AppData = ({ children }) => {
             image: service6,
             para: "Shape the future of your business with our Mobile App Development Services. We turn your ideas into innovative, user-friendly applications that stand out in the digital landscape. From concept to execution, our expert team ensures your mobile app meets and exceeds expectations. Elevate your brand's presence in the palm of your users' hands with our cutting-edge solutions.",
             type: '',
+            service: "Mobile-App-Developement",
             description: "Empower your business with CYTA Technology's Mobile App Development Services. Our mobile app developer team specializes in creating cutting-edge mobile applications tailored to your unique requirements. We assist international brands in crafting and developing exceptional digital products, ensuring smooth user experiences across contemporary platforms and devices. Collaborate with CYTA to transform your app ideas into reality, leveraging the latest technologies to enhance user engagement and drive business growth. Whether you need iOS, Android, or cross-platform development, we offer end-to-end solutions to ensure your mobile app stands out in the digital landscape. Our mobile app development services include:",
             subTypes: [
                 'Product design',
