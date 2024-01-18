@@ -15,6 +15,7 @@ const ServiceBanner = ({ service }) => {
         )
     })
 
+
     return (
         <section className="home-banner">
             <div className="container" style={{ paddingTop: '60px' }}>
@@ -37,6 +38,7 @@ const ServiceBanner = ({ service }) => {
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }
